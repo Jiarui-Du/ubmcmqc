@@ -6,5 +6,5 @@ for t = 2:N+k-1
     x = model.proposal_sample(x);
     xt(t,:) = x;
 end
-rmean = mean(f(xt(k:end,:)),1);
+rmean = mean(f(xt(k+1:end,:)),1);
 end

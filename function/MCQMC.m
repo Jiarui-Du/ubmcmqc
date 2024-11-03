@@ -9,5 +9,5 @@ for t = 1:N+k-1
     x = model.proposal_sample(x,u1);
     xt(t+1,:) = x;
 end
-rmean = mean(f(xt(k:end,:)),1);
+rmean = mean(f(xt(k+1:end,:)),1);
 end
