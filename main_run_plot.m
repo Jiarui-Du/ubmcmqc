@@ -96,14 +96,14 @@ result_trrf = zeros(m,mm);
 for i = 1:mm
     result_trrf(:,i) = result_trmse(:,1)./result_trmse(:,i);
 end
-index = [1,4,7];
+index = [1,ceil(m/2),m];
 % table for presentation
 table = [result_trmse(index,1),result_trrf(index,2)]';
 
 smv = log2(result_rmse);
 tsmv = log2(result_trmse);
 
-%% convergence rate
+% convergence rate
 k1 = polyfit(n,tsmv(:,1),1);
 k2 = polyfit(n,tsmv(:,2),1);
 k3 = polyfit(n,tsmv(:,3),1);
@@ -111,7 +111,6 @@ k3 = polyfit(n,tsmv(:,3),1);
 % convergence plot of total rmse
 style = ["o","p","x","s","d","*"];
 figure
-n = 10:16;
 plot(n,tsmv(:,1),'b-','marker',style(1),'linestyle','-','LineWidth',2)
 hold on
 plot(n,tsmv(:,2),'r-','marker',style(2),'linestyle','-','LineWidth',2)
@@ -142,7 +141,7 @@ style = ["o","p","x","s","d","*"];
 color = ["b","r","k"];
 figure
 ID = 1:p;
-index = [1,4,7];
+index = [1,ceil(m/2),m];
 for i = index
     plot(ID,reshape(smv(i,1,ID),1,p),'color',color(1),'marker',style((i+2)/3),'linestyle','-','LineWidth',2)
     hold on
