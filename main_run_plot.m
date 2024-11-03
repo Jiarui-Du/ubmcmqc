@@ -96,7 +96,7 @@ result_trrf = zeros(m,mm);
 for i = 1:mm
     result_trrf(:,i) = result_trmse(:,1)./result_trmse(:,i);
 end
-index = [1,ceil(m/2),m];
+index = [1,4,7];
 % table for presentation
 table = [result_trmse(index,1),result_trrf(index,2)]';
 
@@ -141,7 +141,7 @@ style = ["o","p","x","s","d","*"];
 color = ["b","r","k"];
 figure
 ID = 1:p;
-index = [1,ceil(m/2),m];
+index = [1,4,7];
 for i = index
     plot(ID,reshape(smv(i,1,ID),1,p),'color',color(1),'marker',style((i+2)/3),'linestyle','-','LineWidth',2)
     hold on
