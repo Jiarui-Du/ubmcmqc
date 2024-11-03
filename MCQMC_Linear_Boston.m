@@ -2,6 +2,15 @@
 clc
 clear
 
+% This file implements the comparsion of MCMC, MCQMC and ubMCQMC
+% for Linear model with the Boston dataset.
+
+% One should run 'data_model.m' at first 
+% to load the corresponding dataset and model,
+% then run 'pilot_run_tau' to simulation \tau 
+% and determine the value of k.
+
+
 % load data and model
 modelname = 'Linear_boston';
 filename = ['./data/',modelname,'.mat'];

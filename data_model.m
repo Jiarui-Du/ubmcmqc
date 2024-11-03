@@ -2,10 +2,12 @@
 clc
 clear
 
+% This file implements the loading of corresponding dataset and model
+
 allmodel = ["Linear_boston","Linear_california","Probit_Vaso",...
     "Probit_Mroz","logistic_pima","logistic_german"];
 
-modelnumber = 6; % different number for different model
+modelnumber = 1; % different number for different model
 % 1: Linear_boston
 % 2: Linear_california
 % 3: Probit_Vaso

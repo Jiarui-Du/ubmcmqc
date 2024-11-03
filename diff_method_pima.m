@@ -2,8 +2,13 @@
 clc
 clear
 
-% One should run 'data_model.m' at first to load dataset and model,
-% then run 'pilot_run_tau' to simulation \tau and determine the value of k.
+% This file implements different approach of update function 
+% for logistic model with the Pima dataset.
+
+% One should run 'data_model.m' at first 
+% to load the corresponding dataset and model,
+% then run 'pilot_run_tau' to simulation \tau 
+% and determine the value of k.
 
 %
 modelname = 'logistic_pima';
