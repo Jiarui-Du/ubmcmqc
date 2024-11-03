@@ -6,6 +6,9 @@ clear
 % One should run 'data_model.m' at first 
 % to load the corresponding dataset and model
 
+% add function
+addpath('./function')
+
 % choose model
 allmodel = ["Linear_boston","Linear_california","Probit_Vaso",...
     "Probit_Mroz","logistic_pima","logistic_german"];

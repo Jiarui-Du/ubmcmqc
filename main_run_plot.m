@@ -8,6 +8,9 @@ clear
 % then run 'pilot_run_tau' to simulation \tau 
 % and determine the value of k.
 
+% add function
+addpath('./function')
+
 % choose model
 allmodel = ["Linear_boston","Linear_california","Probit_Vaso",...
     "Probit_Mroz","logistic_pima","logistic_german"];

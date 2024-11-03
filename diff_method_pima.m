@@ -10,6 +10,9 @@ clear
 % then run 'pilot_run_tau' to simulation \tau 
 % and determine the value of k.
 
+% add function
+addpath('./function')
+
 %
 modelname = 'logistic_pima';
 
