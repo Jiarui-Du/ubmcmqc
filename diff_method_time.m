@@ -1,6 +1,10 @@
 %%
 clc
 clear
+
+% One should run 'data_model.m' at first to load dataset and model,
+% then run 'pilot_run_tau' to simulation \tau and determine the value of k.
+
 %
 modelname = 'logistic_pima';
 

@@ -1,6 +1,9 @@
 clc
 clear
 
+% One should run 'data_model.m' at first to load dataset and model,
+% then run 'pilot_run_tau' to simulation $\tau$ 
+
 % choose model
 allmodel = ["Linear_boston","Linear_california","Probit_Vaso",...
     "Probit_Mroz","logistic_pima","logistic_german"];
